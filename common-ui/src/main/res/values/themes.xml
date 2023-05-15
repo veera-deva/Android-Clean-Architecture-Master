@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="LightTheme" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#FFFFFF</item>
+        <item name="colorPrimaryDark">#989494</item>
+        <item name="colorAccent">#000000</item>
+        <item name="android:textColor">#000000</item>
+        <item name="colorSecondary">#3D3D3D</item>
+        <item name="android:colorBackground">#FFFFFF</item>
+    </style>
+
+    <style name="Widget.App.CircularProgressIndicator" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.CircularProgressIndicator</item>
+        <item name="trackThickness">20dp</item>
+    </style>
+
+    <style name="ThemeOverlay.App.CircularProgressIndicator" parent="">
+        <item name="colorPrimary">@color/purple_200</item>
+    </style>
+
+</resources>

@@ -1,0 +1,74 @@
+ext {
+    def hiltGradleVersion = "2.44.2"
+    def appCompatVersion = "1.6.1"
+    def materialVersion = "1.8.0"
+    def constraintLayoutVersion = "2.1.4"
+    def coreKTXVersion = "1.9.0"
+    def activityKtxVersion = "1.6.1"
+    def lifecycleLiveDataKtx = "2.6.1"
+    def lifecycleViewModelKtx = "2.6.1"
+    def navigationFragmentKtx = "2.5.3"
+    def navigationUIKtx = "2.5.3"
+    def lifecycleExtension = "2.2.0"
+    def retrofitVersion = "2.9.0"
+    def retrofitGsonConvertorVersion = "2.9.0"
+    def okHttpVersion = "4.10.0"
+    def okHttpLoggingInterceptorVersion = "4.10.0"
+    def hiltAndroidVersion = "2.45"
+    def hiltKaptCompilerVersion = "2.45"
+    def hiltNavigationFragmentVersion = "1.0.0"
+    def kaptHiltCompilerVersion = "2.45"
+    def kotlinxCoroutinesVersion = "1.8.0"
+    def testCore = "2.1.0"
+    def testKotlinCoroutines = "1.8.0"
+    def testJunit = "4.13.2"
+    def androidTestJunit = "1.1.5"
+    def androidTestEspressoCore = "3.5.1"
+
+    def mockkVersion="1.9.3"
+
+    androidx = [
+            coreKtx           : "androidx.core:core-ktx:$coreKTXVersion",
+            appCompat         : "androidx.appcompat:appcompat:$appCompatVersion",
+            material          : "com.google.android.material:material:$materialVersion",
+            constrainLayout   : "androidx.constraintlayout:constraintlayout:$constraintLayoutVersion",
+            navigationFragment: "androidx.navigation:navigation-fragment-ktx:$navigationFragmentKtx",
+            navigationUi      : "androidx.navigation:navigation-ui-ktx:$navigationUIKtx",
+            activityKTX       : "androidx.activity:activity-ktx:$activityKtxVersion",
+            lifecycleExt      : "androidx.lifecycle:lifecycle-extensions:$lifecycleExtension",
+            lifecycleLiveData : "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleLiveDataKtx",
+            lifecycleViewModel: "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleViewModelKtx",
+    ]
+
+    google = [
+            material: "com.google.android.material:material:$materialVersion"
+    ]
+    kotlin = [
+            kotlinxCoroutines: "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinxCoroutinesVersion",
+            testKotlinx      : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$testKotlinCoroutines"
+    ]
+
+    hilt = [
+            hiltAndroid            : "com.google.dagger:hilt-android:$hiltAndroidVersion",
+            kaptHiltAndroidCompiler: "com.google.dagger:hilt-android-compiler:$hiltKaptCompilerVersion"
+            kaptHiltCompiler       : "androidx.hilt:hilt-compiler:$kaptHiltCompilerVersion",
+            hiltNavigationFragment : "androidx.hilt:hilt-navigation-fragment:$hiltNavigationFragmentVersion"
+    ]
+
+    network = [
+            retrofit                : "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitGsonConvertor   : "com.squareup.retrofit2:converter-gson:$retrofitGsonConvertorVersion",
+            okhttp                  : "com.squareup.okhttp3:okhttp:$okHttpVersion",
+            okhttpLoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:$okHttpLoggingInterceptorVersion"
+    ]
+    testing = [
+            unitTestingCore: "androidx.test:core-ktx:$testCore",
+            unitTestingJunit:"junit:junit:$testJunit",
+            unitTestingMockk:"io.mockk:mockk:$mockkVersion"
+
+
+
+    ]
+
+
+}

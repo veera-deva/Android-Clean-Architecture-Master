@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="movie_list_card_margin">5dp</dimen>
+    <dimen name="item_movie_height">150dp</dimen>
+    <dimen name="toolbar_elevation">8dp</dimen>
+</resources>

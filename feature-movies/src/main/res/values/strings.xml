@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Strings used for fragments for navigation -->
+    <string name="movies_fragment_label">Movie Fragment</string>
+    <string name="movie_details_fragment_label">Movie Details Fragment</string>
+
+    <string name="errorMsg">Something went wrong. Please try again later.</string>
+    <string name="Retry">Retry</string>
+    <string name="movie_details_preview_description">In the twelfth century, blacksmith Balian travels to Jerusalem, a city seething with religious wars. He transforms into a defending warrior who saves the city and its people.</string>
+    <string name="movie_details_preview_title">Kingdom of Heaven</string>
+</resources>

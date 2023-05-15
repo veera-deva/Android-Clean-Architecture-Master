@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--movie adapter item dimens-->
+    <dimen name="movie_list_card_margin">5dp</dimen>
+    <dimen name="item_movie_height">150dp</dimen>
+    <dimen name="item_card_view_radius">5dp</dimen>
+    <dimen name="item_card_view_elevation">2dp</dimen>
+
+
+    <!--MovieDetailFragment dimens-->
+    <dimen name="movie_detail_margin">16dp</dimen>
+    <dimen name="movie_detail_description_size">24sp</dimen>
+    <dimen name="movie_detail_title_size">26sp</dimen>
+
+    <!--MovieFragment dimens-->
+    <dimen name="movie_list_text_margin">10dp</dimen>
+    <dimen name="movie_list_no_data_padding">20dp</dimen>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="movies"
+            type="com.demo.domain.entity.MovieEntity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.demo.feature.movies.moviedetails.MovieDetailFragment"
+        tools:ignore="ExtraText">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/movie_detail_margin"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toTopOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            bind:loadImage="@{movies.image}"
+            tools:src="@drawable/ic_movie_detail_preview" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/movie_detail_margin"
+            android:layout_marginEnd="@dimen/movie_detail_margin"
+            android:text="@{movies.title}"
+            android:textSize="@dimen/movie_detail_title_size"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/movie_details_preview_title" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/movie_detail_margin"
+            android:layout_marginEnd="@dimen/movie_detail_margin"
+            android:text="@{movies.description}"
+            android:textColor="?attr/colorSecondary"
+            android:textSize="@dimen/movie_detail_description_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:text="@string/movie_details_preview_description" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
